@@ -2,7 +2,6 @@
 body {
     margin: 0;
 }
-
 h1 {
     font-size: 40px;
     text-align: center;
@@ -10,12 +9,9 @@ h1 {
     margin: 0;
     padding: 20px;
 }
-
-a {
-    color: black;
+a {    
     text-decoration: none;
 }
-
 #grid ol {
     border-right: 3px solid gray;
     width: 120px;
@@ -28,7 +24,6 @@ a {
     display: grid;
     grid-template-columns: 170px 1fr;
 }
-
 #article {
     padding-left: 25px;
 }
@@ -37,11 +32,11 @@ a {
     #grid {
         display: block;     
     }   
-
     #grid ol {
         border-right: none;
     }
     h1 {
         font-size: 32px;
+        border-bottom: none;
     }
 }
