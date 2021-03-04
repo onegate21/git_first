@@ -11,13 +11,17 @@ h1 {
     padding: 20px;
 }
 
-ol {
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#grid ol {
     border-right: 3px solid gray;
     width: 120px;
     margin: 0;
     padding: 20px;
-    padding-left: 36px;
-    
+    padding-left: 36px;    
 }
 
 #grid {
@@ -27,4 +31,17 @@ ol {
 
 #article {
     padding-left: 25px;
+}
+
+@media(max-width: 800px) {  
+    #grid {
+        display: block;     
+    }   
+
+    #grid ol {
+        border-right: none;
+    }
+    h1 {
+        font-size: 32px;
+    }
 }
