@@ -41,6 +41,10 @@
 # Library vs framework 
     - Library : jQuery 
 
+# UI vs API
+
+# 문제해결 능력 : Document → DOM(Document Object Model) → ajax → cookie
+
 
 
 
