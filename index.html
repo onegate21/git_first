@@ -8,15 +8,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     
         <title>Onegate Homepage ~!! </title>
-        <script src="https://kit.fontawesome.com/179a7d228e.js" crossorigin="anonymous"></script>    
+        <script src="https://kit.fontawesome.com/179a7d228e.js" crossorigin="anonymous"></script>            
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="color.js"></script>
         
     </head>
+    
 
     <body>
         <h1> Basic Programing </h1>
-
-        <input type="button" value="Night" onclick="document.querySelector('body').style.backgroundColor='black'; document.querySelector('body').style.color='white';">
-        <input type="button" value="Day"   onclick="document.querySelector('body').style.backgroundColor='white'; document.querySelector('body').style.color='black';">
+        <input id="night_day" type="button" value="night" onclick="nightdayHandler(this)">                
 
         <div id="grid">
             <ol>
