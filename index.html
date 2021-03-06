@@ -20,38 +20,36 @@
 
         <div id="grid">
             <ol>
-                <li><a onclick="
-                    fetch('./grammar/01.sentence.htm').then(function(response){
-                        response.text().then(function(text){
-                            document.querySelector('articl_').innerHTML = text;
-                        })
-                    });
-                    ">Sentence</a></li>
-                <li><a onclick="
-                    fetch('./grammar/07.relativep.htm').then(function(response){
-                        response.text().then(function(text){
-                            document.querySelector('articl_').innerHTML = text;
-                        })
-                    });
-                    ">RelativeProvnoun</a></li>
-                <li><a onclick="
-                    fetch('./grammar/09.conjunction.htm').then(function(response){
-                        response.text().then(function(text){
-                            document.querySelector('articl_').innerHTML = text;
-                        })
-                    });
-                    ">Conjuction</a></li>                                        
+                <li><a href="#!./grammar/01.sentence.htm"    onclick="fetchPage('./grammar/01.sentence.htm')"   >Sentence</a></li>
+                <li><a href="#!./grammar/07.relativep.htm"   onclick="fetchPage('./grammar/07.relativep.htm')"  >RelativeProvnoun</a></li>
+                <li><a href="#!./grammar/09.conjunction.htm" onclick="fetchPage('./grammar/09.conjunction.htm')">SenConjuction</a></li>
             </ol>        
+
             <div id="article">
                 <articl_></articl_>
                 <br><br><br>
                 <img src="./image/main.jpg" alt="" title="메인이미지" width="200">
             </div>
         </div>
+
+        <script>
+            function fetchPage(grammar){
+                fetch(grammar).then(function(response){
+                        response.text().then(function(text){
+                            document.querySelector('articl_').innerHTML = text;
+                        })
+                    });
+            }
+
+            if(location.hash) {
+                fetchPage(location.hash.substr(2));
+            } else {
+                fetchPage('welcome.html');
+            }
+
+        </script>
         
     </body>
-
-
 
 
 </html>
