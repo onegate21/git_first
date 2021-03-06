@@ -21,21 +21,21 @@
         <div id="grid">
             <ol>
                 <li><a onclick="
-                    fetch('01.sentence.htm').then(function(response){
+                    fetch('./grammar/01.sentence.htm').then(function(response){
                         response.text().then(function(text){
                             document.querySelector('articl_').innerHTML = text;
                         })
                     });
                     ">Sentence</a></li>
                 <li><a onclick="
-                    fetch('07.relativep.htm').then(function(response){
+                    fetch('./grammar/07.relativep.htm').then(function(response){
                         response.text().then(function(text){
                             document.querySelector('articl_').innerHTML = text;
                         })
                     });
                     ">RelativeProvnoun</a></li>
                 <li><a onclick="
-                    fetch('09.conjunction.htm').then(function(response){
+                    fetch('./grammar/09.conjunction.htm').then(function(response){
                         response.text().then(function(text){
                             document.querySelector('articl_').innerHTML = text;
                         })
