@@ -20,7 +20,7 @@
         <nav class="navbar">
             <div class=" navbar_logo">            
                 <i class="fas fa-feather-alt"></i>
-                <a href="">&nbsp  Zone Sketch !</a>
+                <a href="">&nbsp  Sketch Zone !</a>
             </div>
     
             <ul class="navbar_menu">  <!--   (li>a)*5      -->
@@ -39,9 +39,7 @@
             <a href="#" class="navbar_toogleBtn">
             <i class="fas fa-bars"></i>
             </a>    
-        </nav>
-
-        <input id="night_day" type="button" value="night" onclick="nightdayHandler(this)">                
+        </nav>        
 
         <div id="grid">
             <ol>
@@ -71,11 +69,11 @@
             if(location.hash) {
                 fetchPage(location.hash.substr(2));
             } else {
-                fetchPage('welcome.html');
+                fetchPage('./grammar/01.sentence.htm');
             }
 
         </script>
-        <script src="color.js"></script>
+        <script src="main.js"></script>
     </body>
 
 
