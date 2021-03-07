@@ -1,6 +1,24 @@
 
 
 
+
+
+
+
+
+/*_____________________________________________________________________ 네비게시션*/
+
+const toggleBtn = document.querySelector('.navbar_toogleBtn');
+const menu = document.querySelector('.navbar_menu');
+const icons = document.querySelector('.navbar_icons');
+
+toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    icons.classList.toggle('active');
+});
+
+
+/*_____________________________________________________________________ 색상토글*/
 var Link = {
     SetColor : function(iColor) {        
         // var links = document.querySelectorAll('a');
