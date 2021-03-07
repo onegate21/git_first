@@ -108,6 +108,7 @@
 body {
     margin: 0;
 }
+
 h1 {
     font-size: 38px;
     text-align: center;
@@ -121,16 +122,17 @@ a {
     text-decoration: none;     
 }
 #grid ol {
-    border-right: 3px solid gray;
+    border-right: 280px;
     width: 120px;
     margin: 0;
     padding: 20px;
     padding-left: 36px;    
+    padding-right: 136px;    
 }
 
 #grid {
     display: grid;
-    grid-template-columns: 170px 1fr;
+    grid-template-columns: 270px 2fr;
 }
 #article {
     padding-left: 25px;
