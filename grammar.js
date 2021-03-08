@@ -5,10 +5,10 @@
 /* __________________________________________________________________ 색상 토글 */
 /* HTML */
 <input id="night_day" type="button" value="night" onclick="nightdayHandler(this)">                
+</input>
 
 
 /* Javascript */
-</input>
 var Link = {
     SetColor : function(iColor) {        
         // var links = document.querySelectorAll('a');

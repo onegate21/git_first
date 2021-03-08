@@ -118,8 +118,9 @@ h1 {
     background-color: rgb(21,73,121);
     color: rgb(255, 215, 0);
 }
-a {    
+#grid a {    
     text-decoration: none;     
+    color: black;
 }
 #grid ol {
     border-right: 280px;
@@ -132,7 +133,8 @@ a {
 
 #grid {
     display: grid;
-    grid-template-columns: 270px 2fr;
+    grid-template-columns: 270px 1fr;
+ 
 }
 #article {
     padding-left: 25px;
